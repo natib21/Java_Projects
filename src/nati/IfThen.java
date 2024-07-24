@@ -1,3 +1,5 @@
+package nati;
+
 public class IfThen {
     public static void main(String[] args) {
         boolean isAlien = false;
