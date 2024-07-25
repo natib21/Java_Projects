@@ -1,4 +1,4 @@
-package nati;
+package Section_1;
 
 public class IfThen {
     public static void main(String[] args) {
