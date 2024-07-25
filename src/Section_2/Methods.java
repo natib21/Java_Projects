@@ -1,3 +1,5 @@
+package Section_2;
+
 public class Methods {
     public static void main(String[] args) {
       int highScore = calculateScore(true,800,5,100);
