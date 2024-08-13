@@ -1,6 +1,8 @@
 package Section_4;
 
 public class AccountClass {
+
+
      private int Account_number;
      private int Account_balance;
      private String Name;
@@ -13,6 +15,26 @@ public class AccountClass {
 
     public int getAccount_balance() {
         return Account_balance;
+    }
+    public AccountClass() {
+        this(221133,5000,"Picolo","picolozelalem@gmail.com",911413623);
+        System.out.println("Empty Constructor are Called");
+    }
+    public AccountClass(int Account_number , int Account_balance , String Name,String Email,int phone_number ){
+        System.out.println("Account constructor with parameter called");
+        this.Account_number =Account_number;
+        this.Account_balance = Account_balance;
+        this.Name =Name;
+        this.Email = Email;
+        this.Phone_number = phone_number;
+
+    }
+
+    public AccountClass(int phone_number, String email, String name) {
+        this(89232,3000,name,email,phone_number);
+        Phone_number = phone_number;
+        Email = email;
+        Name = name;
     }
 
     public String getName() {
