@@ -13,5 +13,6 @@ public class StringMethods {
        System.out.println(newDate);
 
        System.out.println(newDate.replace('/','-'));
+
     }
 }
