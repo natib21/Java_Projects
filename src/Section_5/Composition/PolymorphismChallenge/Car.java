@@ -63,7 +63,7 @@ class ElectricCar extends Car{
 
     @Override
     public void StartEngine() {
-        super.StartEngine();
+        System.out.printf("Bev -> All %d cylinders are fired up, Ready! %n",batterySize);
     }
 
     @Override
@@ -73,7 +73,7 @@ class ElectricCar extends Car{
 
     @Override
     protected void runEngine() {
-        super.runEngine();
+        System.out.printf("Bev -> All %d cylinders are fired up, Ready! %n",avgKmPerCharge);
     }
 }
 
@@ -93,7 +93,7 @@ class HybridCar extends Car {
 
     @Override
     public void StartEngine() {
-        super.StartEngine();
+        System.out.printf("Gas -> All %d cylinders are fired up, Ready! %n",cylinders);
     }
 
     @Override
@@ -103,6 +103,6 @@ class HybridCar extends Car {
 
     @Override
     protected void runEngine() {
-        super.runEngine();
+        System.out.printf("Hybrid -> usage exceeds the average: %.2f %n",avgKmPerLitre);
     }
 }
