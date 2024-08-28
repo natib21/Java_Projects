@@ -19,6 +19,15 @@ public class MultipleArrays {
                 array2[i][j] = (i * 10) + (j + 1);
             }
         }
-        System.out.print(Arrays.deepToString(array2));
+        System.out.println(Arrays.deepToString(array2));
+
+
+        Object[] antArray = new Object[3];
+        System.out.println(Arrays.toString(antArray));
+
+        antArray[0] = new String[] {"a","b","c"};
+        System.out.println(Arrays.deepToString(antArray));
+
+
     }
 }
