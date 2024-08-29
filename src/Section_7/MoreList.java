@@ -19,5 +19,26 @@ public class MoreList {
 
         groceries.addAll(nextList);
         System.out.println(groceries);
+
+        System.out.println("Third item = " + groceries.get(2));
+
+        if(groceries.contains("mustard")){
+            System.out.println("List Contains Mustard");
+        }
+        System.out.println(groceries);
+        groceries.remove(1);
+        System.out.println(groceries);
+        groceries.remove("Yogurt");
+        System.out.println(groceries);
+
+        groceries.removeAll(List.of("apples","eggs"));
+        System.out.println(groceries);
+
+        groceries.clear();
+        System.out.println(groceries);
+        System.out.println("isEmpty = "+ groceries.isEmpty());
+
+
+
     }
 }
