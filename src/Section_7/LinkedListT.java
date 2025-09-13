@@ -17,7 +17,8 @@ public class LinkedListT {
     removeElements(placeToVisit);
     System.out.println(placeToVisit);
 //    getElements(placeToVisit);
-   printItinerary2(placeToVisit);
+//   printItinerary2(placeToVisit);
+        testiterator(placeToVisit);
     }
 
     private static void addMoreElements(LinkedList<String> list){
@@ -91,5 +92,17 @@ public class LinkedListT {
         }
 
         System.out.println("Trip Ends at = "+ list.getLast());
+    }
+
+    private static void testiterator(LinkedList<String> list){
+        var iterator = list.listIterator();
+        while (iterator.hasNext()){
+//            System.out.println(iterator.next());
+            if(iterator.next().equals("ENGLAND")){
+                iterator.add("Lake Victoria");
+            }
+        }
+
+        System.out.println(list);
     }
 }
